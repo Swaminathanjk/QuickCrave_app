@@ -64,7 +64,7 @@ const Add = () => {
         try {
             const response = await axios.post(`${url}/api/food/add`, formData);
             if (response.data.success) {
-                toast.success(response.data.message);
+                toast.success(response.data.message); 
                 setData({
                     name: "",
                     description: "",
